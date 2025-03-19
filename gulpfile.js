@@ -128,10 +128,9 @@ gulp.task('templates', () => {
         noRedeclare: true, // Avoid duplicate declarations
         namespace: 'templates',
         processName: function (filePath) {
-          // Allow nesting based on path using gulp-declare's processNameByPath()
-          // You can remove this option completely if you aren't using nested folders
-          // Drop the templates/ folder from the namespace path by removing it from the filePath
-          return declare.processNameByPath(filePath.replace('src/templates/', ''));
+          // Extract only the filename, ignoring all directory structure
+          const fileName = filePath.replace(/^.*[\\/]/, '').replace('.hbs', '');
+          return fileName;
         }
       })
     )
