@@ -1,8 +1,8 @@
 {
   "name": "@contently/videojs-annotation-comments",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A plugin for video.js to add support for timeline moment/range comments and annotations",
-  "repository": "git@github.com:contently/videojs-annotation-comments.git",
+  "repository": "git@github.com:trilogy-group/contently-videojs-annotation-comments.git",
   "main": "build/videojs-annotation-comments.cjs.js",
   "style": "build/css/annotations.css",
   "files": [

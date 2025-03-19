@@ -1,6 +1,8 @@
 var Handlebars = require("handlebars/runtime");
  exports["templates"] = exports["templates"] || {};
-exports["templates"]["comment"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+exports["templates"]["src"] = exports["templates"]["src"] || {};
+exports["templates"]["src"]["templates"] = exports["templates"]["src"]["templates"] || {};
+exports["templates"]["src"]["templates"]["comment"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -18,7 +20,7 @@ exports["templates"]["comment"] = Handlebars.template({"compiler":[8,">= 4.3.0"]
     + alias4((lookupProperty(helpers,"breaklines")||(depth0 && lookupProperty(depth0,"breaklines"))||alias2).call(alias1,(depth0 != null ? lookupProperty(depth0,"body") : depth0),{"name":"breaklines","hash":{},"data":data,"loc":{"start":{"line":9,"column":4},"end":{"line":9,"column":23}}}))
     + "\n  </div>\n</div>\n";
 },"useData":true});
-exports["templates"]["comment_list"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams) {
+exports["templates"]["src"]["templates"]["comment_list"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1;
 
   return "    "
@@ -38,7 +40,7 @@ exports["templates"]["comment_list"] = Handlebars.template({"1":function(contain
     + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"rangeStr") || (depth0 != null ? lookupProperty(depth0,"rangeStr") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"rangeStr","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":10,"column":36},"end":{"line":10,"column":48}}}) : helper)))
     + "</div>\n    <div class=\"vac-control-buttons\">\n      <a class=\"vac-delete-annotation\">DELETE</a> | <a class=\"vac-close-comment-list\">CLOSE</a>\n    </div>\n  </div>\n</div>\n";
 },"useData":true,"useBlockParams":true});
-exports["templates"]["controls"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+exports["templates"]["src"]["templates"]["controls"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -108,7 +110,7 @@ exports["templates"]["controls"] = Handlebars.template({"1":function(container,d
     + "\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"adding") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":15,"column":0},"end":{"line":51,"column":7}}})) != null ? stack1 : "");
 },"useData":true});
-exports["templates"]["draggable_marker"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+exports["templates"]["src"]["templates"]["draggable_marker"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -124,7 +126,7 @@ exports["templates"]["draggable_marker"] = Handlebars.template({"compiler":[8,">
     + alias4(((helper = (helper = lookupProperty(helpers,"width") || (depth0 != null ? lookupProperty(depth0,"width") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"width","hash":{},"data":data,"loc":{"start":{"line":1,"column":105},"end":{"line":1,"column":114}}}) : helper)))
     + ";\">\n</div>\n";
 },"useData":true});
-exports["templates"]["marker"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+exports["templates"]["src"]["templates"]["marker"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     return "vac-ranged-marker";
 },"3":function(container,depth0,helpers,partials,data) {
     var helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -185,10 +187,10 @@ exports["templates"]["marker"] = Handlebars.template({"1":function(container,dep
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"showTooltip") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":3,"column":4},"end":{"line":11,"column":11}}})) != null ? stack1 : "")
     + "</div>\n";
 },"useData":true});
-exports["templates"]["marker_wrap"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+exports["templates"]["src"]["templates"]["marker_wrap"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"vac-marker-owrap\">\n	<div class=\"vac-marker-wrap\"></div>\n</div>\n";
 },"useData":true});
-exports["templates"]["new_comment"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+exports["templates"]["src"]["templates"]["new_comment"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -204,6 +206,6 @@ exports["templates"]["new_comment"] = Handlebars.template({"compiler":[8,">= 4.3
     + alias4(((helper = (helper = lookupProperty(helpers,"right") || (depth0 != null ? lookupProperty(depth0,"right") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"right","hash":{},"data":data,"loc":{"start":{"line":3,"column":82},"end":{"line":3,"column":91}}}) : helper)))
     + "px\">\n      <textarea placeholder=\"Enter comment...\"></textarea>\n      <div>\n        <button class=\"vac-button\">SAVE</button>\n        <a>Cancel</a>\n      </div>\n    </div>\n  </div>\n";
 },"useData":true});
-exports["templates"]["player_button"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+exports["templates"]["src"]["templates"]["player_button"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<b></b>\n<i class=\"vac-player-icon\">\n	<svg height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n		<path\n			d=\"M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z\" />\n		<path d=\"M0 0h24v24H0z\" fill=\"none\" />\n	</svg>\n</i>\n";
 },"useData":true});
